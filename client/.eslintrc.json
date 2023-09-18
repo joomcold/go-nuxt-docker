@@ -41,6 +41,7 @@
     "no-empty-function": "error",
     "no-debugger": "error",
     "arrow-parens": ["error", "always"],
-    "func-names": ["error", "never"]
+    "func-names": ["error", "never"],
+    "vue/multi-word-component-names": "off"
   }
 }
