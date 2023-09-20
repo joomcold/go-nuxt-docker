@@ -9,7 +9,7 @@
         <li>
           <details>
             <summary>Parent</summary>
-            <ul class="p-2 bg-base-100">
+            <ul class="bg-base-100 p-2">
               <li><a>Link 1</a></li>
               <li><a>Link 2</a></li>
             </ul>
