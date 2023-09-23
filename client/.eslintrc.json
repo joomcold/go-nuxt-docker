@@ -19,7 +19,7 @@
   ],
   "rules": {
     "no-unused-vars": ["error", { "args": "none" }],
-    "no-console": ["error", { "allow": ["warn", "error"] }],
+    "no-console": ["warn", { "allow": ["warn", "error"] }],
     "indent": ["error", 2],
     "quotes": ["error", "single"],
     "semi": ["error", "never"],
