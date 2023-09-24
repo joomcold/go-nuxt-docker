@@ -10,9 +10,10 @@
     "ecmaVersion": "latest",
     "parser": "@typescript-eslint/parser"
   },
-  "plugins": ["tailwindcss"],
+  "plugins": ["vue", "tailwindcss"],
   "extends": [
     "@nuxtjs/eslint-config-typescript",
+    "plugin:vue/recommended",
     "plugin:prettier/recommended",
     "plugin:tailwindcss/recommended",
     "eslint:recommended"
