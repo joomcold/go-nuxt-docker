@@ -1,9 +1,16 @@
 <template>
   <main>
+    <Head>
+      <Title>{{ title }}</Title>
+      <Meta name="description" :content="title" />
+    </Head>
+
     <Header />
-    <div class="container">
-      <slot />
-    </div>
+    <slot />
     <Footer />
   </main>
 </template>
+
+<script setup lang="ts">
+const title = ref('App')
+</script>

@@ -31,7 +31,7 @@
     "eqeqeq": "error",
     "prefer-template": "error",
     "no-useless-escape": "error",
-    "max-len": ["error", { "code": 80, "ignoreUrls": true }],
+    "max-len": ["error", { "code": 95, "ignoreUrls": true }],
     "no-trailing-spaces": "error",
     "no-alert": "error",
     "no-eval": "error",
@@ -47,6 +47,7 @@
     "vue/multi-word-component-names": "off",
     "tailwindcss/classnames-order": "warn",
     "tailwindcss/no-contradicting-classname": "error",
-    "tailwindcss/no-custom-classname": "off"
+    "tailwindcss/no-custom-classname": "off",
+    "tailwindcss/enforces-shorthand": "error"
   }
 }
