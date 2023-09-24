@@ -1,7 +1,5 @@
 <template>
-  <header
-    class="navbar bg-base-200 sticky top-0 z-40 drop-shadow-md backdrop-blur-sm"
-  >
+  <header class="header navbar">
     <div class="flex-1">
       <NuxtLink class="text-xl normal-case" to="/">Logo</NuxtLink>
     </div>
@@ -48,6 +46,6 @@ const toggleTheme = () => {
 
 <style scoped lang="scss">
 .header {
-  @apply sticky bg-base-200 top-0 z-40 bg-opacity-90 drop-shadow-md backdrop-blur-sm;
+  @apply bg-base-200 bg-opacity/90 sticky top-0 z-40 drop-shadow-md backdrop-blur-sm;
 }
 </style>
