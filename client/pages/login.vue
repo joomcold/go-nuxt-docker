@@ -1,5 +1,10 @@
 <template>
   <section>
+    <div class="flex items-center justify-center">
+      <NuxtLink class="link-hover link-info link" to="/">
+        <img src="/nintendo.jpg" alt="Logo" width="100" height="100" />
+      </NuxtLink>
+    </div>
     <div class="card glass mx-auto mt-6 w-3/4 flex-row">
       <div class="card-body w-2/4">
         <h1 class="card-title">Login to your account</h1>
@@ -64,7 +69,11 @@
   </section>
 </template>
 
-<script setup></script>
+<script setup lang="ts">
+definePageMeta({
+  layout: 'plain'
+})
+</script>
 
 <style scoped lang="scss">
 .btn-google {

@@ -5,10 +5,16 @@
     </div>
     <div class="flex-none p-2">
       <ul class="menu menu-horizontal px-1">
-        <label class="label cursor-pointer gap-1" @click="toggleTheme">
-          <Icon name="ri:moon-fill" color="light_gray" size="0.9rem" />
-          <input type="checkbox" class="toggle toggle-warning toggle-xs" />
-          <Icon name="ri:sun-fill" color="orange" size="1rem" />
+        <label
+          v-auto-animate
+          class="label cursor-pointer gap-1"
+          @click="themeStore.toggleTheme"
+        >
+          <Icon
+            name="arcticons:galaxy-themes"
+            color="light_gray"
+            size="0.9rem"
+          />
         </label>
         <li>
           <NuxtLink to="/login">Login</NuxtLink>
@@ -31,17 +37,10 @@
 </template>
 
 <script setup lang="ts">
+import { useThemeStore } from '@/stores/theme'
+
 const isLoggedIn = ref(false)
-const theme = ref('night')
-const changedTheme = computed(() => theme.value)
-
-useHead({
-  htmlAttrs: { 'data-theme': changedTheme }
-})
-
-const toggleTheme = () => {
-  theme.value = theme.value === 'cupcake' ? 'night' : 'cupcake'
-}
+const themeStore = useThemeStore()
 </script>
 
 <style scoped lang="scss">

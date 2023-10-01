@@ -1,10 +1,8 @@
 <template>
   <main>
-    <Header />
     <div class="container mx-auto">
       <slot />
     </div>
-    <Footer />
   </main>
 </template>
 
