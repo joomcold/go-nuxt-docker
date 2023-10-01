@@ -5,17 +5,20 @@
     </div>
     <div class="flex-none p-2">
       <ul class="menu menu-horizontal px-1">
-        <label
-          v-auto-animate
-          class="label cursor-pointer gap-1"
-          @click="themeStore.toggleTheme"
-        >
-          <Icon
-            name="arcticons:galaxy-themes"
-            color="light_gray"
-            size="0.9rem"
-          />
-        </label>
+        <li>
+          <details>
+            <summary>Themes</summary>
+            <ul class="bg-base-100 p-2">
+              <li
+                v-for="(theme, index) in themes"
+                :key="index"
+                @click="themeStore.toggleTheme(theme)"
+              >
+                {{ theme }}
+              </li>
+            </ul>
+          </details>
+        </li>
         <li>
           <NuxtLink to="/login">Login</NuxtLink>
         </li>
@@ -41,6 +44,7 @@ import { useThemeStore } from '@/stores/theme'
 
 const isLoggedIn = ref(false)
 const themeStore = useThemeStore()
+const themes = ['cupcake', 'night', 'forest']
 </script>
 
 <style scoped lang="scss">
